@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "swadesh", "releaseYear": 2004, "duration": 189 },
+  { "id": 2, "name": "jawaan", "releaseYear": 2023, "duration": 140 },
+  { "id": 3, "name": "krrish", "releaseYear": 2006, "duration": 160 },
+  { "id": 8, "name": "ashiqui 2", "releaseYear": 2013, "duration": 132 },
+  { "id": 9, "name": "vijaypath", "releaseYear": 1997, "duration": 133 },
+  {
+    "id": 10,
+    "name": "main khiladi tu anari",
+    "releaseYear": 1998,
+    "duration": 134
+  }
+]
