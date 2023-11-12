@@ -7,13 +7,13 @@ const router = express.Router();
 //   console.log(`the id is ${value}`);
 //   next();
 // });
- 
-router.param("id",moviesController.checkedID);
+
+// router.param("id",moviesController.checkedID);
 
 router
   .route("/")
   .get(moviesController.getAllMovies)
-  .post(moviesController.validateBody,moviesController.createMovie); // chaining multiple middleware
+  .post(moviesController.createMovie); // chaining multiple middleware
 
 router
   .route("/:id")
