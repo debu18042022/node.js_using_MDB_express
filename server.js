@@ -1,20 +1,17 @@
 const mongoose = require("mongoose");
 const app = require("./app");
-// console.log(process.env.CONN_STR);
+const dotenv = require("dotenv");
+
+dotenv.config({ path: "./config.env" });
+
+console.log(process.env.CONN_STR);
+
 mongoose
-  .connect(
-    "mongodb+srv://admin:pEs9L3xRR7xegHie@cluster0.rvnjs6f.mongodb.net/cineflix?retryWrites=true&w=majority",
-    {
-      useNewUrlPArser: true,
-    }
-  )
+  .connect(process.env.CONN_STR, { useNewUrlPArser: true })
   .then((conn) => {
     // console.log(conn);
     console.log("DB connection successful");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+  }).catch((err) => { console.log(err); });
 
 // /**creating a document */
 // const testMovie = new Movie({
