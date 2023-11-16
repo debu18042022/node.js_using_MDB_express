@@ -6,8 +6,8 @@ exports.getAllMovies = async (req, res) => {
     // 1st method
     // const movies = await Movie.find({ duration: + req.query.duration, ratings: +req.query.ratings }); // find method returns a promise
     // 2nd Method
-    const movies = await Movie.find(req.query); // find method returns a promise
-    // 3rd Method
+    const movies = await Movie.find(req.query) // find method returns a promise
+    // 3rd Methodddd
     // const movies = await Movie.find()
     //   .where("duration")
     //   .equals(req.query.duration)
